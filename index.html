@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p1 id="ans"></p1>
+    <script>
+        var n1=prompt("Enter a first number: ");
+        var n2=prompt("Enter a second number: ");
+        n1=parseFloat(n1);
+        n2=parseFloat(n2);
+
+        document.getElementById("ans").innerHTML+="The inputs before swapping: "+n1+" and "+n2+". <br>";
+
+        var temp=n1;
+        n1=n2;
+        n2=temp;
+
+        document.getElementById("ans").innerHTML+="After swapping: "+n1+" and "+n2+". <br>";
+
+        var sum=n1+n2;
+
+        document.getElementById("ans").innerHTML+="The sum of the two numbers is "+sum+". <br>";
+
+    </script>
+</body>
+</html>
